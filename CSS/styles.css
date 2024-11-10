@@ -383,3 +383,113 @@ body {
         display: block;
     }
 }
+
+/* Genel Ayarlar */
+.login-body {
+    background-color: #890025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* Logo */
+.login-logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -20px; /* Yukarı kaydırmak için negatif değer */
+}
+
+/* APPLICANTS TRACKING SYSTEM Text */
+.tracking-system-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Login Box */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.login-box {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Boşluk artırıldı */
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C2C2C;
+    margin-bottom: 30px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2C2C2C;
+    background-color: #F5F5F5; /* Daha gri bir arka plan rengi */
+}
+
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FE0045;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 20px;
+    background-color: #FE0045;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #D9003A;
+}
+
+
+

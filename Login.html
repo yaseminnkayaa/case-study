@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Login - Applicant Tracking System</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
-    
+<body class="login-body">
+    <div class="login-container">
+        <!-- Logo ve Başlık Alanı -->
+        <svg class="login-logo" width="305" height="71" viewBox="0 0 305 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- SVG içeriği -->
+        </svg>
+        <h5 class="tracking-system-title">APPLICANTS TRACKING SYSTEM</h5>
+
+        <!-- Login Kutusu -->
+        <div class="login-box">
+            <h1 class="login-title">Login</h1>
+            <form id="loginForm" onsubmit="return validateLogin()">
+                <input type="email" id="email" class="login-input" placeholder="E-mail Address" required>
+                <div class="password-container">
+                    <input type="password" id="password" class="login-input" placeholder="Password" required>
+                    <img src="./figures/password_icon_transparent.png" class="password-toggle" alt="Toggle Password">
+                </div>
+                <a href="#" class="forgot-password">I forgot my password</a>
+                <button type="submit" class="login-button">→ Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Giriş bilgilerini kontrol et
+            if (email === 'deneme_yasemin@gmail.com' && password === 'yasemin_ybs') {
+                // Doğruysa Dashboard.html sayfasına yönlendir
+                window.location.href = 'Dashboard.html';
+                return false; // Formun varsayılan submit işlemini engeller
+            } else {
+                // Yanlış giriş bilgileri mesajı
+                alert('Invalid email or password');
+                return false; // Formun submit edilmesini engeller
+            }
+        }
+    </script>
 </body>
 </html>
