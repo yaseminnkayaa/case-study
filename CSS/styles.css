@@ -384,7 +384,7 @@ body {
     }
 }
 
-/* Genel Ayarlar */
+
 .login-body {
     background-color: #890025;
     display: flex;
@@ -395,15 +395,15 @@ body {
     position: relative;
 }
 
-/* Logo */
+
 .login-logo {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: -20px; /* Yukarı kaydırmak için negatif değer */
+    top: -20px;
 }
 
-/* APPLICANTS TRACKING SYSTEM Text */
+
 .tracking-system-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -415,7 +415,6 @@ body {
     margin-top: 10px;
 }
 
-/* Login Box */
 .login-container {
     display: flex;
     flex-direction: column;
@@ -429,7 +428,7 @@ body {
     border-radius: 10px;
     width: 400px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 30px; /* Boşluk artırıldı */
+    margin-top: 30px;
 }
 
 .login-title {
@@ -447,7 +446,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     color: #2C2C2C;
-    background-color: #F5F5F5; /* Daha gri bir arka plan rengi */
+    background-color: #F5F5F5;
 }
 
 
@@ -489,6 +488,114 @@ body {
 
 .login-button:hover {
     background-color: #D9003A;
+}
+
+
+
+.login-body {
+    background-color: #890025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+
+.login-logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+
+.tracking-system-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.reset-box {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.reset-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2C2C2C;
+    margin-bottom: 30px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2C2C2C;
+    background-color: #EAF0F3;
+}
+
+
+.recaptcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.recaptcha-container label {
+    font-size: 16px;
+    color: #737373;
+}
+
+.recaptcha-logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.reset-button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #FE0045;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #D9003A;
+}
+
+
+.return-login {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #FE0045;
+    text-decoration: none;
+    text-align: center;
 }
 
 
