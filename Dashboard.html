@@ -64,7 +64,7 @@
                     </clipPath>
                 </defs>
             </svg>
-        </div>    
+        </div>   
         <div class="line-separator"></div>    
         
         <div class="user-profile">
@@ -76,7 +76,7 @@
         </div>
     </div>
 
-    
+    <!-- Header -->
     <div class="header">
         <div class="app-title">
             <span class="title">APPLICANTS TRACKING SYSTEM</span>
@@ -106,16 +106,100 @@
         </div>
         <div class="language-selector">
             <img src="figures/language-icon.png" alt="Language Icon" class="language-icon">
-            <span class="language-text">ENG</span>
-            <img src="figures/arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
-        </div>        
+            <span class="language-text" id="languageText">ENG</span>
+            <svg class="arrow-icon" width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg" onclick="toggleLanguageList()">
+                <path d="M4.46967 8.46967C4.73594 8.2034 5.1526 8.1792 5.44621 8.39705L5.53033 8.46967L12 14.939L18.4697 8.46967C18.7359 8.2034 19.1526 8.1792 19.4462 8.39705L19.5303 8.46967C19.7966 8.73594 19.8208 9.1526 19.6029 9.44621L19.5303 9.53033L12.5303 16.5303C12.2641 16.7966 11.8474 16.8208 11.5538 16.6029L11.4697 16.5303L4.46967 9.53033C4.17678 9.23744 4.17678 8.76256 4.46967 8.46967Z"/>
+            </svg>
+            <ul class="language-list" id="languageList">
+                <li onclick="switchLanguage()">TR</li>
+            </ul>
+        </div>              
     </div>
 
-    
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+        <!-- Top Statistics Cards -->
+        <div class="stats-cards">
+            <div class="stats-card">
+                <p>Total Applicants</p>
+                <h2>10,245</h2>
+                <span class="stats-increase">↑ 14.03% This Month</span>
+            </div>
+            <div class="stats-card">
+                <p>Hired</p>
+                <h2>54</h2>
+                <span class="stats-increase">↑ 25.27% This Month</span>
+            </div>
+            <div class="stats-card">
+                <p>Active Procedure</p>
+                <h2>11</h2>
+                <span class="stats-decrease">↓ 24.07% This Month</span>
+            </div>
+            <div class="stats-card">
+                <p>Passive Procedure</p>
+                <h2>5</h2>
+                <span class="stats-decrease">↓ 42.19% This Month</span>
+            </div>
+            <div class="stats-card">
+                <p>Happiness Rate</p>
+                <h2>4.1</h2>
+                <span class="stats-increase">↑ 6.21% This Month</span>
+            </div>
+        </div>
+
+        <!-- Graphs Section -->
+        <div class="graphs-section">
+            <div class="nationalities-graph">
+                <h3>Nationalities (Number of applications)</h3>
+                <div class="graph-content">
+                    <p>Graph Placeholder - Bar Chart of Nationalities</p>
+                </div>
+            </div>
+            <div class="calling-graph">
+                <h3>Calling</h3>
+                <div class="graph-content">
+                    <p>Graph Placeholder - Pie Chart for Calling</p>
+                    <ul>
+                        <li><span class="circle red"></span> Woman Applicants: 1,407</li>
+                        <li><span class="circle blue"></span> Man Applicants: 575</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Applicants Information -->
+        <div class="applicants-info">
+            <h3>Applicants</h3>
+            <div class="applicants-graph">
+                <p>Graph Placeholder - Donut Chart for Applicants</p>
+            </div>
+            <div class="applicants-data">
+                <ul>
+                    <li>Applicants: 5,737 (56%)</li>
+                    <li>Shortlisting: 2,971 (29%)</li>
+                    <li>Final Listing: 1,535 (15%)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script>
         function toggleSidebar() {
             document.querySelector('.sidebar').classList.toggle('hide');
         }
+
+        document.querySelector('.arrow-icon').addEventListener('click', function() {
+        const languageList = document.querySelector('.language-list');
+        languageList.style.display = languageList.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.querySelector('.language-list').addEventListener('click', function() {
+        const languageText = document.querySelector('.language-text');
+        languageText.textContent = languageText.textContent === 'ENG' ? 'TR' : 'ENG';
+        this.style.display = 'none';
+    });
+
+
     </script>
 </body>
 </html>
