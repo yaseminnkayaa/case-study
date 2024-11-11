@@ -17,35 +17,35 @@
         </div>
         
         <div class="menu">
-            <div class="menu-item active">
+            <div class="menu-item active" data-page="./Dashboard.html">
                 <img src="figures/dashboard-icon_transparent.png" alt="Dashboard Icon" class="icon">
                 <span class="menu-text">Dashboard</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/tasks-icon_transparent.png" alt="Tasks Icon" class="icon">
                 <span class="menu-text">Tasks</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/procedures-icon_transparent.png" alt="Procedures Icon" class="icon">
                 <span class="menu-text">Procedures</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/create-procedures-icon_transparent.png" alt="Create Procedures Icon" class="icon">
                 <span class="menu-text">Create Procedures</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/leads-icon_transparent.png" alt="Leads Icon" class="icon">
                 <span class="menu-text">Leads</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/employees-icon_transparent.png" alt="Employees Icon" class="icon">
                 <span class="menu-text">Employees</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/calendar-icon_transparent.png" alt="Calendar Icon" class="icon">
                 <span class="menu-text">Calendar</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-page="">
                 <img src="figures/library-icon_transparent.png" alt="Library Icon" class="icon">
                 <span class="menu-text">Library</span>
             </div>
@@ -116,55 +116,278 @@
         </div>              
     </div>
 
+    <div class="header-tools">
+        <div class="welcome-message">
+            Welcome,&nbsp; <span style="font-weight: bold;">Emily</span>
+        </div>
+        
+        <div class="icon-buttons">
+            <img src="figures/pdf-icon-transparent.png" alt="PDF Icon" class="icon-button">
+            <img src="figures/excel-icon-transparent (1).png" alt="Excel Icon" class="icon-button">
+            <div class="search-bar" id="mia-search-bar">
+                <img src="figures/search-icon.png" alt="Search Icon" class="search-icon">
+                <input type="text" value="Mia Turner - DRH Recruiting Staff" class="search-input">
+            </div>
+            <button class="year-button" id="year-button-unique">
+                This Year
+                <svg width="20" height="22" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4109 0.768617L13.4119 1.51824C16.1665 1.73413 17.9862 3.61119 17.9891 6.48975L18 14.9155C18.0039 18.054 16.0322 19.985 12.8718 19.99L5.15188 20C2.01119 20.004 0.0148166 18.027 0.0108673 14.8795L6.64975e-06 6.55272C-0.00394266 3.65517 1.75153 1.78311 4.50617 1.53024L4.50518 0.780611C4.5042 0.340832 4.83001 0.00999726 5.26444 0.00999726C5.69886 0.00899776 6.02468 0.338833 6.02567 0.778612L6.02666 1.47826L11.8914 1.47027L11.8904 0.770616C11.8894 0.330837 12.2152 0.00100177 12.6497 2.26549e-06C13.0742 -0.000997234 13.4099 0.328838 13.4109 0.768617ZM1.52148 6.86157L16.4696 6.84158V6.49175C16.4272 4.34283 15.349 3.21539 13.4138 3.04748L13.4148 3.81709C13.4148 4.24688 13.0801 4.5877 12.6556 4.5877C12.2212 4.5887 11.8943 4.24887 11.8943 3.81909L11.8934 3.0095L6.02863 3.01749L6.02962 3.82609C6.02962 4.25687 5.70479 4.5967 5.27036 4.5967C4.83594 4.5977 4.50913 4.25887 4.50913 3.82809L4.50815 3.05847C2.58286 3.25137 1.51753 4.38281 1.52049 6.55072L1.52148 6.86157ZM12.2399 11.4043V11.4153C12.2498 11.8751 12.625 12.2239 13.0801 12.2139C13.5244 12.2029 13.8789 11.8221 13.869 11.3623C13.8483 10.9225 13.4918 10.5637 13.0485 10.5647C12.5944 10.5747 12.2389 10.9445 12.2399 11.4043ZM13.0554 15.892C12.6013 15.882 12.235 15.5032 12.234 15.0435C12.2241 14.5837 12.5884 14.2029 13.0426 14.1919H13.0525C13.5165 14.1919 13.8927 14.5707 13.8927 15.0405C13.8937 15.5102 13.5185 15.891 13.0554 15.892ZM8.17212 11.4203C8.19187 11.8801 8.56804 12.2389 9.02221 12.2189C9.46651 12.1979 9.82096 11.8181 9.80121 11.3583C9.79035 10.9085 9.42504 10.5587 8.98074 10.5597C8.52657 10.5797 8.17113 10.9605 8.17212 11.4203ZM9.02616 15.8471C8.57199 15.8671 8.1968 15.5082 8.17607 15.0485C8.17607 14.5887 8.53052 14.2089 8.98469 14.1879C9.42899 14.1869 9.79529 14.5367 9.80516 14.9855C9.82589 15.4463 9.47046 15.8261 9.02616 15.8471ZM4.10433 11.4553C4.12408 11.915 4.50025 12.2749 4.95442 12.2539C5.39872 12.2339 5.75317 11.8531 5.73243 11.3933C5.72256 10.9435 5.35725 10.5937 4.91196 10.5947C4.45779 10.6147 4.10334 10.9955 4.10433 11.4553ZM4.95837 15.8521C4.5042 15.8731 4.12901 15.5132 4.10828 15.0535C4.10729 14.5937 4.46273 14.2129 4.9169 14.1929C5.3612 14.1919 5.7275 14.5417 5.73737 14.9915C5.7581 15.4513 5.40365 15.8321 4.95837 15.8521Z" fill="#FE0045"/>
+                </svg>                  
+            </button>
+        </div>
+    </div>
+    
+
     <!-- Dashboard Content -->
     <div class="dashboard-content">
         <!-- Top Statistics Cards -->
         <div class="stats-cards">
             <div class="stats-card">
-                <p>Total Applicants</p>
-                <h2>10,245</h2>
-                <span class="stats-increase">↑ 14.03% This Month</span>
+                <div class="card-header">
+                    <!-- SVG ikonu buraya ekliyoruz -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                    </svg>
+                    <p>Total Applicants</p>
+                </div>
+                <h2>10.245</h2>
+                <div class="stats-footer">
+                    <span class="stats-increase">
+                        <span class="increase-icon">↑</span> %14,03
+                    </span>
+                    <span class="monthly-increase"><strong>+426</strong> This Month</span>
+                </div>
             </div>
             <div class="stats-card">
-                <p>Hired</p>
+                <div class="card-header">
+                    <!-- Güncellenmiş SVG İkon -->
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.67 0H14.34C17.73 0 20 2.38 20 5.92V14.091C20 17.62 17.73 20 14.34 20H5.67C2.28 20 0 17.62 0 14.091V5.92C0 2.38 2.28 0 5.67 0ZM9.43 12.99L14.18 8.24C14.52 7.9 14.52 7.35 14.18 7C13.84 6.66 13.28 6.66 12.94 7L8.81 11.13L7.06 9.38C6.72 9.04 6.16 9.04 5.82 9.38C5.48 9.72 5.48 10.27 5.82 10.62L8.2 12.99C8.37 13.16 8.59 13.24 8.81 13.24C9.04 13.24 9.26 13.16 9.43 12.99Z" fill="#2C2C2C"/>
+                    </svg>
+                    <p>Hired</p>
+                </div>
                 <h2>54</h2>
-                <span class="stats-increase">↑ 25.27% This Month</span>
-            </div>
+                <div class="stats-footer">
+                    <span class="stats-increase">
+                        <span class="increase-icon">↑</span> 25.27%
+                    </span>
+                    <span class="monthly-increase"><strong>+5</strong> This Month</span>
+                </div>
+            </div>                  
             <div class="stats-card">
-                <p>Active Procedure</p>
+                <div class="card-header">
+                    <!-- Üçüncü stat için SVG ikon -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1796 4.41C17.1796 3.08 18.2596 2 19.5896 2C20.9196 2 21.9996 3.08 21.9996 4.41C21.9996 5.74 20.9196 6.82 19.5896 6.82C18.2596 6.82 17.1796 5.74 17.1796 4.41ZM13.3295 14.7593L16.2195 11.0303L16.1795 11.0503C16.3395 10.8303 16.3695 10.5503 16.2595 10.3003C16.1505 10.0503 15.9095 9.8803 15.6505 9.8603C15.3795 9.8303 15.1105 9.9503 14.9495 10.1703L12.5305 13.3003L9.75951 11.1203C9.58951 10.9903 9.38951 10.9393 9.18951 10.9603C8.99051 10.9903 8.81051 11.0993 8.68951 11.2593L5.73051 15.1103L5.66951 15.2003C5.49951 15.5193 5.57951 15.9293 5.87951 16.1503C6.01951 16.2403 6.16951 16.3003 6.33951 16.3003C6.57051 16.3103 6.78951 16.1893 6.92951 16.0003L9.43951 12.7693L12.2895 14.9103L12.3795 14.9693C12.6995 15.1393 13.0995 15.0603 13.3295 14.7593ZM15.4495 3.7803C15.4095 4.0303 15.3895 4.2803 15.3895 4.5303C15.3895 6.7803 17.2095 8.5993 19.4495 8.5993C19.6995 8.5993 19.9395 8.5703 20.1895 8.5303V16.5993C20.1895 19.9903 18.1895 22.0003 14.7895 22.0003H7.40051C3.99951 22.0003 1.99951 19.9903 1.99951 16.5993V9.2003C1.99951 5.8003 3.99951 3.7803 7.40051 3.7803H15.4495Z" fill="#2C2C2C"/>
+                    </svg>
+                    <p>Active Procedure</p>
+                </div>
                 <h2>11</h2>
-                <span class="stats-decrease">↓ 24.07% This Month</span>
-            </div>
+                <div class="stats-footer">
+                    <span class="stats-decrease">
+                        <span class="decrease-icon">↓</span> 24.07%
+                    </span>
+                    <span class="monthly-increase"><strong class="increase-value">-3</strong> This Month</span>
+                </div>
+            </div>            
             <div class="stats-card">
-                <p>Passive Procedure</p>
+                <div class="card-header">
+                    <!-- Dördüncü stat için SVG ikon -->
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.67 -0.000976562H14.34C17.73 -0.000976562 20 2.37902 20 5.91902V14.09C20 17.62 17.73 19.999 14.34 19.999H5.67C2.28 19.999 0 17.62 0 14.09V5.91902C0 2.37902 2.28 -0.000976562 5.67 -0.000976562ZM13.01 12.999C13.35 12.66 13.35 12.11 13.01 11.77L11.23 9.99002L13.01 8.20902C13.35 7.87002 13.35 7.31002 13.01 6.97002C12.67 6.62902 12.12 6.62902 11.77 6.97002L10 8.74902L8.22 6.97002C7.87 6.62902 7.32 6.62902 6.98 6.97002C6.64 7.31002 6.64 7.87002 6.98 8.20902L8.76 9.99002L6.98 11.76C6.64 12.11 6.64 12.66 6.98 12.999C7.15 13.169 7.38 13.26 7.6 13.26C7.83 13.26 8.05 13.169 8.22 12.999L10 11.23L11.78 12.999C11.95 13.18 12.17 13.26 12.39 13.26C12.62 13.26 12.84 13.169 13.01 12.999Z" fill="#2C2C2C"/>
+                    </svg>
+                    <p>Passive Procedure</p>
+                </div>
                 <h2>5</h2>
-                <span class="stats-decrease">↓ 42.19% This Month</span>
-            </div>
+                <div class="stats-footer">
+                    <span class="stats-decrease">
+                        <span class="decrease-icon">↓</span> 42.19%
+                    </span>
+                    <span class="monthly-increase"><strong class="increase-value">+2</strong> This Month</span>
+                </div>
+            </div>            
             <div class="stats-card">
-                <p>Happiness Rate</p>
-                <h2>4.1</h2>
-                <span class="stats-increase">↑ 6.21% This Month</span>
+                <div class="card-header">
+                    <!-- Beşinci stat için SVG ikon -->
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0079 10.0109C19.9968 15.5861 15.5055 20.0496 9.88032 19.9996C4.38295 19.9551 -0.0193968 15.4861 -0.00827977 9.96646C0.00283726 4.45242 4.51079 -0.016629 10.0415 4.65153e-05C15.5333 0.0111635 20.019 4.51912 20.0079 10.0109ZM9.74691 16.0141C11.0365 16.003 12.0148 15.7584 12.9153 15.2582C13.8658 14.7301 14.6162 13.9964 15.172 13.057C15.3944 12.6846 15.3165 12.2955 14.983 12.0898C14.6495 11.8842 14.266 11.9953 14.0381 12.3566C14.0103 12.4011 13.9769 12.4511 13.9492 12.4956C12.7819 14.3521 10.4584 15.147 8.40731 14.391C7.37899 14.0131 6.57856 13.3572 6.00603 12.4233C5.88375 12.2232 5.73923 12.0453 5.49465 12.0064C5.21672 11.962 4.98327 12.0454 4.82207 12.2788C4.64976 12.5289 4.66643 12.7846 4.82207 13.0403C6.01159 14.9691 7.75697 15.9252 9.74691 16.0141ZM8.663 7.33173C8.663 6.598 8.05713 5.99768 7.3234 6.00324C6.58412 6.0088 5.99492 6.60912 5.99492 7.3484C6.00048 8.07657 6.6008 8.67133 7.32896 8.67133C8.06824 8.67133 8.663 8.07101 8.663 7.33173ZM14.0047 7.33729C14.0047 6.598 13.4044 5.99768 12.6651 6.00324C11.9259 6.00324 11.3311 6.60912 11.3366 7.3484C11.3366 8.07657 11.937 8.67133 12.6651 8.67133C13.3989 8.67133 13.9992 8.07101 14.0047 7.33729Z" fill="#2C2C2C"/>
+                    </svg>
+                    <p>Happiness Rate</p>
+                </div>
+                <div class="stat-value">
+                    <!-- Yeni SVG ikon, 4.1'in solunda boşlukla birlikte -->
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6652 12.417C16.3954 12.6784 16.2714 13.0566 16.3329 13.4274L17.2589 18.5524C17.337 18.9868 17.1537 19.4264 16.7902 19.6774C16.4339 19.9378 15.96 19.9691 15.5714 19.7607L10.9579 17.3545C10.7975 17.2691 10.6193 17.2232 10.437 17.218H10.1548C10.0568 17.2326 9.961 17.2639 9.8735 17.3118L5.25892 19.7295C5.0308 19.8441 4.77246 19.8847 4.51934 19.8441C3.90267 19.7274 3.49121 19.1399 3.59225 18.5201L4.51934 13.3951C4.5808 13.0212 4.45684 12.641 4.18705 12.3753L0.425587 8.72949C0.111003 8.42428 0.00162844 7.96595 0.145378 7.55241C0.284962 7.13991 0.641212 6.83887 1.07142 6.77116L6.2485 6.02012C6.64225 5.97949 6.98809 5.73991 7.16517 5.38574L9.44642 0.708659C9.50059 0.604492 9.57038 0.508659 9.65475 0.427409L9.7485 0.354492C9.79746 0.300326 9.85371 0.255534 9.91621 0.219076L10.0298 0.177409L10.2068 0.104492H10.6454C11.037 0.145117 11.3818 0.379492 11.562 0.729492L13.8735 5.38574C14.0402 5.72637 14.3641 5.96283 14.7381 6.02012L19.9152 6.77116C20.3527 6.83366 20.7183 7.13574 20.8631 7.55241C20.9995 7.97012 20.8818 8.42845 20.561 8.72949L16.6652 12.417Z" fill="black"/>
+                    </svg>
+                    <h2>4.1</h2>
+                </div>
+                <div class="stats-footer">
+                    <span class="stats-increase">
+                        <span class="increase-icon">↑</span> 6.21%
+                    </span>
+                    <span class="monthly-increase"><strong class="increase-value">+5</strong> This Month</span>
+                </div>
+            </div>            
             </div>
+            
         </div>
 
         <!-- Graphs Section -->
         <div class="graphs-section">
             <div class="nationalities-graph">
-                <h3>Nationalities (Number of applications)</h3>
-                <div class="graph-content">
-                    <p>Graph Placeholder - Bar Chart of Nationalities</p>
+                <h3 class="graph-title">
+                    <img src="figures/language-icon.png" alt="Globe Icon" class="graph-icon">
+                    Nationalities <span class="graph-subtitle">(Number of applications)</span>
+                </h3>
+                <div class="all-procedures-title">All Procedures</div>
+                <div class="filter-section">
+                    <button class="filter-button">Decreasing
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 4L5 6L7 4H3Z" fill="#737373"/>
+                        </svg>
+                    </button>
+                    <button class="filter-button">Select Procedures
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 4L5 6L7 4H3Z" fill="#737373"/>
+                        </svg>
+                    </button>
+                </div>
+            
+                <div class="bar-chart">
+                    <!-- France Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            35
+                        </span>
+                        <svg width="52" height="200" viewBox="0 0 52 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="52" height="200" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">France</span>
+                    </div>
+            
+                    <!-- Germany Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            24
+                        </span>
+                        <svg width="53" height="170" viewBox="0 0 53 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.625" width="52" height="170" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Germany</span>
+                    </div>
+            
+                    <!-- England Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            22
+                        </span>
+                        <svg width="53" height="152" viewBox="0 0 53 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.25" width="52" height="152" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">England</span>
+                    </div>
+            
+                    <!-- Spain Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            19
+                        </span>
+                        <svg width="53" height="131" viewBox="0 0 53 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.375" width="52" height="131" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Spain</span>
+                    </div>
+            
+                    <!-- Italy Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            16
+                        </span>
+                        <svg width="53" height="108" viewBox="0 0 53 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="52" height="108" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Italy</span>
+                    </div>
+            
+                    <!-- Sweden Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            11
+                        </span>
+                        <svg width="53" height="84" viewBox="0 0 53 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.625" width="52" height="84" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Sweden</span>
+                    </div>
+            
+                    <!-- Algeria Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            9
+                        </span>
+                        <svg width="53" height="51" viewBox="0 0 53 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.75" width="52" height="51" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Algeria</span>
+                    </div>
+            
+                    <!-- Greece Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            6
+                        </span>
+                        <svg width="53" height="29" viewBox="0 0 53 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.875" width="52" height="29" rx="10" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Greece</span>
+                    </div>
+            
+                    <!-- Russian F. Bar -->
+                    <div class="bar">
+                        <span class="value">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z" fill="#2C2C2C"/>
+                            </svg>
+                            4
+                        </span>
+                        <svg width="52" height="14" viewBox="0 0 52 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="52" height="14" rx="7" fill="#FE0045"/>
+                        </svg>
+                        <span class="label">Russian F.</span>
+                    </div>
+                </div>
+                <div class="custom-scrollbar">
+                    <svg width="100%" height="4" viewBox="0 0 100% 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="4" rx="2" fill="#F0EFEF"/>
+                    </svg>
                 </div>
             </div>
-            <div class="calling-graph">
-                <h3>Calling</h3>
-                <div class="graph-content">
-                    <p>Graph Placeholder - Pie Chart for Calling</p>
-                    <ul>
-                        <li><span class="circle red"></span> Woman Applicants: 1,407</li>
-                        <li><span class="circle blue"></span> Man Applicants: 575</li>
-                    </ul>
-                </div>
-            </div>
+            
+            
         </div>
 
         <!-- Applicants Information -->
@@ -199,6 +422,25 @@
         this.style.display = 'none';
     });
 
+    // Tüm menu-item öğelerini seçin
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    // Her menu-item'a tıklanma olayını ekleyin
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            // Aktif sınıfını tüm öğelerden kaldırın
+            menuItems.forEach(i => i.classList.remove('active'));
+            
+            // Tıklanan öğeye aktif sınıfını ekleyin
+            this.classList.add('active');
+            
+            // Yönlendirme işlemi
+            const pageName = this.getAttribute('data-page'); // data-page değerini al
+            if (pageName) {
+                window.location.href = pageName; // Belirtilen sayfaya yönlendir
+            }
+        });
+    });
 
     </script>
 </body>
