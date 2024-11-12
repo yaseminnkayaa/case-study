@@ -1707,6 +1707,23 @@ body {
     background-color: #7B68EE;
 }
 
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 500;
+    height: 29px;
+    padding-left: 10px;
+    width: 284px;
+    transition: transform 0.2s ease, color 0.2s ease; /* Yumuşak geçiş için */
+    cursor: pointer; /* El simgesi */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Menü öğesini büyüt */
+}
 
 
 
