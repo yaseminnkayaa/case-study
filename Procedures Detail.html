@@ -3,10 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procedures Detail</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Procedures</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="figures/Asset 1.png" alt="Logo" class="logo-img">
+        </div>
+        
+        <div class="menu">
+            <div class="menu-item" data-page="./Dashboard.html">
+                <img src="figures/dashboard-icon_transparent.png" alt="Dashboard Icon" class="icon">
+                <span class="menu-text">Dashboard</span>
+            </div>
+            <div class="menu-item" data-page="./Tasks.html">
+                <img src="figures/tasks-icon_transparent.png" alt="Tasks Icon" class="icon">
+                <span class="menu-text">Tasks</span>
+            </div>
+            <div class="menu-item active" data-page="./Procedures.html">
+                <img src="figures/procedures-icon_transparent.png" alt="Procedures Icon" class="icon">
+                <span class="menu-text">Procedures</span>
+            </div>
+            <div class="menu-item" data-page="./CREATE PROCEDURES.html">
+                <img src="figures/create-procedures-icon_transparent.png" alt="Create Procedures Icon" class="icon">
+                <span class="menu-text">Create Procedures</span>
+            </div>
+            <div class="menu-item" data-page="./LEADS Applicants.html">
+                <img src="figures/leads-icon_transparent.png" alt="Leads Icon" class="icon">
+                <span class="menu-text">Leads</span>
+            </div>
+            <div class="menu-item" data-page="./Employees.html">
+                <img src="figures/employees-icon_transparent.png" alt="Employees Icon" class="icon">
+                <span class="menu-text">Employees</span>
+            </div>
+            <div class="menu-item" data-page="./Calendar.html">
+                <img src="figures/calendar-icon_transparent.png" alt="Calendar Icon" class="icon">
+                <span class="menu-text">Calendar</span>
+            </div>
+            <div class="menu-item" data-page="./Library.html">
+                <img src="figures/library-icon_transparent.png" alt="Library Icon" class="icon">
+                <span class="menu-text">Library</span>
+            </div>
+        </div>
+        
+        <div class="accessibility">
+            
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_471_60227)">
+                    <circle cx="25" cy="25" r="25" fill="white"/>
+                    <path d="M25 0C11.2083 0 0 11.2083 0 25C0 38.7917 11.2083 50 25 50C38.7917 50 50 38.7917 50 25C50 11.2083 38.7917 0 25 0ZM25 8.33333C27.2917 8.33333 29.1667 10.2083 29.1667 12.5C29.1667 14.7917 27.2917 16.6667 25 16.6667C22.7083 16.6667 20.8333 14.7917 20.8333 12.5C20.8333 10.2083 22.7083 8.33333 25 8.33333ZM36.3542 18.5208L29.1667 22.1042V29.4583L33.0625 36.4583C33.625 37.4583 33.2708 38.7292 32.25 39.2917C31.9375 39.4792 31.5833 39.5625 31.2292 39.5625C30.5 39.5625 29.7917 39.1667 29.4167 38.5L25.375 31.2292H24.6042L20.5625 38.5C20.1875 39.1875 19.4792 39.5625 18.75 39.5625C18.3958 39.5625 18.0625 39.4792 17.7292 39.2917C16.7292 38.7292 16.3542 37.4583 16.9167 36.4583L20.8125 29.4583V22.1042L13.625 18.5208C12.6042 18 12.1875 16.75 12.6875 15.7292C13.2083 14.7083 14.4583 14.2917 15.4792 14.7917L23.375 18.7292H26.5625L34.4583 14.7917C35.4792 14.2708 36.7292 14.6875 37.25 15.7292C37.7708 16.75 37.3542 18 36.3125 18.5208H36.3542Z" fill="#FE0045"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_471_60227">
+                        <rect width="50" height="50" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>   
+        <div class="line-separator"></div>    
+        
+        <div class="user-profile">
+            <img src="figures/user-image.png" alt="User Image" class="profile-pic">
+            <div class="user-info">
+                <span class="user-name">Emily Taylor</span>
+                <span class="user-role">DHR ADMIN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="app-title">
+            <span class="title">APPLICANTS TRACKING SYSTEM</span>
+            <span class="dashboard">DASHBOARD</span>
+        </div>
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <img src="figures/search-icon.png" alt="Search Icon" class="search-icon">
+                <input type="text" placeholder="Search People" class="search-input">
+            </div>
+            <div class="voice-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15C13.66 15 15 13.66 15 12V6C15 4.34 13.66 3 12 3C10.34 3 9 4.34 9 6V12C9 13.66 10.34 15 12 15Z" fill="#FE0045"/>
+                    <path d="M19 11V12C19 15.31 16.31 18 13 18V20C13 20.55 12.55 21 12 21C11.45 21 11 20.55 11 20V18C7.69 18 5 15.31 5 12V11H7V12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12V11H19Z" fill="#FE0045"/>
+                </svg>
+            </div> 
+        </div>
+        <div class="notifications">
+            <span class="notification-count">2</span>
+            <img src="figures/notifications_2.png" alt="Notification Icon" class="notification-icon">
+            <span class="notification-text">Notifications</span>
+        </div>                 
+        <div class="messages">
+            <span class="message-count">3</span>
+            <img src="figures/message-icon.png" alt="Message Icon" class="message-icon">
+            <span class="message-text">Messages</span>
+        </div>
+        <div class="language-selector">
+            <img src="figures/language-icon.png" alt="Language Icon" class="language-icon">
+            <span class="language-text" id="languageText">ENG</span>
+            <svg class="arrow-icon" width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg" onclick="toggleLanguageList()">
+                <path d="M4.46967 8.46967C4.73594 8.2034 5.1526 8.1792 5.44621 8.39705L5.53033 8.46967L12 14.939L18.4697 8.46967C18.7359 8.2034 19.1526 8.1792 19.4462 8.39705L19.5303 8.46967C19.7966 8.73594 19.8208 9.1526 19.6029 9.44621L19.5303 9.53033L12.5303 16.5303C12.2641 16.7966 11.8474 16.8208 11.5538 16.6029L11.4697 16.5303L4.46967 9.53033C4.17678 9.23744 4.17678 8.76256 4.46967 8.46967Z"/>
+            </svg>
+            <ul class="language-list" id="languageList">
+                <li onclick="switchLanguage()">TR</li>
+            </ul>
+        </div>              
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('hide');
+        }
+
+        document.querySelector('.arrow-icon').addEventListener('click', function() {
+            const languageList = document.querySelector('.language-list');
+            languageList.style.display = languageList.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.querySelector('.language-list').addEventListener('click', function() {
+            const languageText = document.querySelector('.language-text');
+            languageText.textContent = languageText.textContent === 'ENG' ? 'TR' : 'ENG';
+            this.style.display = 'none';
+        });
+
+        // Menu item click event
+        const menuItems = document.querySelectorAll('.menu-item');
+        
+        menuItems.forEach(item => {
+            item.addEventListener('click', function () {
+                menuItems.forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+                
+                const pageName = this.getAttribute('data-page');
+                if (pageName) {
+                    window.location.assign(pageName);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
