@@ -253,7 +253,7 @@
     .arrow-icon {
     width: 24px;
     height: 24px;
-    fill: #FE0045; /* 2 ve 3 simgelerinin rengiyle aynı */
+    fill: #FE0045;
     cursor: pointer;
     }
     
@@ -261,7 +261,7 @@
     display: none;
     position: absolute;
     top: 30px;
-    left: 10px; /* Konumu biraz daha sağa kaydırmak için değeri artırdık */
+    left: 10px;
     background-color: white;
     border: 1px solid #C2C2C2;
     border-radius: 5px;
@@ -282,10 +282,8 @@
     background-color: #f1f1f1;
     }
     
-    
-    /* Dropdown ok simgesi */
     .arrow-icon path {
-    fill: #FE0045; /* 2 ve 3 simgelerinin etrafındaki kırmızı renkle aynı */
+    fill: #FE0045;
     }
     
     .dashboard-content {
@@ -296,13 +294,13 @@
     
     .stats-card {
     position: relative;
-    width: 100%; /* Kartlar, grid kolonlarının %75 genişliğini kaplayacak */
+    width: 100%;
     height: auto;
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 12px; /* Yüksekliği %20 artırmak için padding 10px’den 12px’e çıkarıldı */
-    min-height: 20% higher than original; /* Kartın minimum yüksekliği artırıldı */
+    padding: 12px;
+    min-height: 20% higher than original; 
     text-align: left;
     }
     
@@ -323,7 +321,7 @@
     .stat-value {
     display: flex;
     align-items: center;
-    gap: 8px; /* İkon ve 4.1 arasında boşluk ekler */
+    gap: 8px;
     }
     
     .stats-card h2 {
@@ -351,8 +349,8 @@
     }
     
     .stats-decrease {
-    background: #FDEDEC; /* Kırmızımsı bir arka plan */
-    color: #DC3545; /* Kırmızı metin */
+    background: #FDEDEC;
+    color: #DC3545;
     }
     
     .increase-value {
@@ -389,26 +387,26 @@
     grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
     gap: 5px;
     margin-top: 20px;
-    padding-left: 26px; /* Stats-card ile hizalamak için sol padding eklendi */
+    padding-left: 26px;
     }
     
     .graphs-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-left: 340px; /* Applicants-info ve stats-card hizalamasına uygun hale getirildi */
+    margin-left: 340px;
     padding-left: 20px;
-    margin-top: 20px; /* stats-card ve graphs-section arasındaki boşluk kadar */
+    margin-top: 20px;
     margin-bottom: 10px;
     }
     
     .applicants-info {
-    margin-left: 360px; /* Başlangıç konumunu sola çekmek için artırıldı */
+    margin-left: 360px;
     padding: 20px;
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 30px; /* graphs-section ile aynı boşluğu sağlar */
+    margin-top: 30px;
     }
     
     @media (max-width: 768px) {
@@ -505,7 +503,7 @@
     padding: 15px 20px;
     background-color: #EAF0F3;
     border-bottom: 1px solid #C2C2C2;
-    margin-left: -10px; /* Sol taraftaki elemanlar için alan açar */
+    margin-left: -10px;
     }
     
     .year-button {
@@ -514,16 +512,16 @@
     background: #FFFFFF;
     border: 1px solid #C2C2C2;
     border-radius: 5px;
-    padding: 0 15px; /* Üst ve alt padding'i sıfırlayıp genişlik için soldan sağa padding */
-    height: 32px; /* search-bar yüksekliğiyle aynı */
+    padding: 0 15px;
+    height: 32px;
     font-size: 16px;
     color: #2C2C2C;
     cursor: pointer;
-    margin-left: 10px; /* Solundaki elemanla arasındaki boşluk */
+    margin-left: 10px;
     }
     
     .year-button svg {
-    margin-left: 8px; /* Metin ile ikon arasında boşluk */
+    margin-left: 8px;
     width: 20px;
     height: 20px;
     }
@@ -539,15 +537,15 @@
     font-weight: 500;
     font-size: 23px;
     line-height: 34px;
-    color: #FE0045; /* Primary color */
-    display: inline-flex; /* Align inline with other elements in .header-tools */
+    color: #FE0045;
+    display: inline-flex;
     align-items: center;
     margin-left: calc(314px + 10px);
     }
     
     .welcome-name {
-    font-weight: bold; /* Make Emily bold */
-    color: #FE0045; /* Keep same color */
+    font-weight: bold;
+    color: #FE0045;
     } 
     
     .nationalities-graph {
@@ -611,7 +609,7 @@
     width: 100%;
     height: auto;
     margin-top: 20px;
-    margin-left: 30%; /* Barları %30 sağa kaydırır */
+    margin-left: 30%;
     }
     
     
@@ -638,9 +636,9 @@
     .bar .label {
     font-weight: bold;
     font-size: 14px;
-    color: #2C2C2C; /* Üstteki rakamlarla aynı renk */
+    color: #2C2C2C;
     text-align: center;
-    margin-top: 5px; /* Bar ve ülke adı arasında boşluk */
+    margin-top: 5px;
     }
     
     
@@ -655,14 +653,14 @@
     
     .graphs-section {
     position: relative;
-    width: calc(80% - 40px); /* Genişliği %20 sola alınan butonlara göre yeniden ayarlar */
+    width: calc(80% - 40px);
     }
     
     .filter-section {
     display: flex;
     gap: 10px;
     position: absolute;
-    right: 78px; /* Sağ hizayı tam olarak graphs-section sınırına getirir */
+    right: 78px;
     top: 0;
     }
     
@@ -681,7 +679,7 @@
     
     .all-procedures-title {
     position: relative;
-    transform: translateY(60px); /* Yüksekliği ayarlayarak tam hizaya getirebilirsiniz */
+    transform: translateY(60px);
     margin-left: 10px;
     }
     
@@ -691,22 +689,22 @@
     color: #2C2C2C;
     text-align: center;
     margin-top: 5px;
-    white-space: nowrap; /* Metni tek satırda tutar */
+    white-space: nowrap;
     }
     
     .custom-scrollbar {
     display: flex;
     justify-content: left;
-    margin-top: 10px; /* Barların altına boşluk bırakır */
-    width: calc(100% - 40px); /* Bar genişliğine göre ayarlama */
-    margin-left: 10px; /* All Procedures ile hizalama sağlar */
+    margin-top: 10px;
+    width: calc(100% - 40px);
+    margin-left: 10px;
     }
     
     .custom-scrollbar svg {
-    width: 40px; /* Kaydırma çubuğunun genişliği büyütüldü */
-    height: 12px; /* Yükseklik arttırıldı */
-    fill: #000000; /* Renk koyulaştırıldı */
-    border-radius: 10px; /* Elips şekli sağlandı */
+    width: 40px;
+    height: 12px;
+    fill: #000000;
+    border-radius: 10px;
     }
 
 
@@ -1096,7 +1094,6 @@ body {
     }
 }
 
-/* Genel Ayarlar */
 .login-body {
     background-color: #890025;
     display: flex;
@@ -1107,15 +1104,13 @@ body {
     position: relative;
 }
 
-/* Logo */
 .login-logo {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: -20px; /* Yukarı kaydırmak için negatif değer */
+    top: -20px; 
 }
 
-/* APPLICANTS TRACKING SYSTEM Text */
 .tracking-system-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1127,7 +1122,6 @@ body {
     margin-top: 10px;
 }
 
-/* Login Box */
 .login-container {
     display: flex;
     flex-direction: column;
@@ -1141,7 +1135,7 @@ body {
     border-radius: 10px;
     width: 400px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 30px; /* Boşluk artırıldı */
+    margin-top: 30px;
 }
 
 .login-title {
@@ -1159,7 +1153,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     color: #2C2C2C;
-    background-color: #F5F5F5; /* Daha gri bir arka plan rengi */
+    background-color: #F5F5F5;
 }
 
 
@@ -1418,14 +1412,10 @@ body {
 }
 
 
-
-    
-
-/* Benzersiz Search Bar için Stil */
 #mia-search-bar {
     display: flex;
     align-items: center;
-    background: #FFFFFF; /* Arka plan rengini özelleştirin */
+    background: #FFFFFF;
     border: 1px solid #C2C2C2;
     border-radius: 5px;
     padding: 5px 10px;
@@ -1442,7 +1432,6 @@ body {
     color: #000000;
 }
 
-/* Benzersiz Year Button için Stil */
 #year-button-unique {
     display: flex;
     align-items: center;
@@ -1464,12 +1453,11 @@ body {
 }
 
 
-/* Tüm sayfa için yatay kaydırma ekleyin */
 body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: auto; /* Yatay kaydırma çubuğunu etkinleştir */
+    overflow-x: auto;
     background-color: #EAF0F3;
-    min-width: 1200px; /* Minimum sayfa genişliği */
+    min-width: 1200px;
 }
 
 .graphs-section {
@@ -1477,7 +1465,7 @@ body {
     gap: 20px;
     margin-top: 20px;
     padding: 20px;
-    min-width: calc(53px * 9 + 30px * 8 + 40px); /* Tüm bar genişlikleri + boşluklar + ekstra 20px */
+    min-width: calc(53px * 9 + 30px * 8 + 40px);
 }
 
 .nationalities-graph {
@@ -1490,8 +1478,8 @@ body {
 
 .bar-chart {
     display: flex;
-    gap: 30px; /* Barlar arası boşluk */
-    min-width: calc(53px * 9 + 30px * 8); /* Tüm barların genişlikleri ve aralarındaki boşlukların toplamı */
+    gap: 30px;
+    min-width: calc(53px * 9 + 30px * 8);
 }
 
 #chart2 {
@@ -1570,58 +1558,54 @@ body {
     color: #2C2C2C;
 }
 
-/* Genel ayarlar */
 body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: auto; /* Yatay kaydırma etkin */
+    overflow-x: auto;
     background-color: #EAF0F3;
-    min-width: 1400px; /* Daha geniş bir görünüm sağlamak için minimum genişlik */
+    min-width: 1400px;
 }
 
-/* Graphs section ayarları */
 .graphs-section {
     display: flex;
     gap: 20px;
     margin-top: 20px;
     padding: 20px;
-    min-width: 1400px; /* Sayfa genişliğini artırmak için minimum genişlik */
-    width: auto; /* İçeriğe göre genişlik ayarı */
+    min-width: 1400px;
+    width: auto;
 }
 
-/* Nationalities graph ayarları */
 .nationalities-graph {
     background: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Mevcut alanı tam kaplaması için */
-    max-width: calc(100% - 340px); /* Sağda `char2` için yer bırak */
-    overflow-x: auto; /* Yatay kaydırmayı etkinleştir */
+    flex: 1;
+    max-width: calc(100% - 340px); 
+    overflow-x: auto;
 }
 
-/* Bar chart ayarları */
+
 .bar-chart {
     display: flex;
-    gap: 20px; /* Barlar arası boşluk */
+    gap: 20px;
     justify-content: flex-start;
-    padding-right: 20px; /* Sağda boşluk bırak */
-    min-width: 900px; /* Barların genişliği için minimum genişlik */
+    padding-right: 20px;
+    min-width: 900px;
 }
 
-/* Bar ayarları */
+
 .bar {
     text-align: center;
 }
 
-/* char2 grafik ayarları */
 #char2 {
-    width: 320px; /* Grafik için sabit genişlik */
+    width: 320px;
     background: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-left: 20px; /* `nationalities-graph` ile arasında boşluk bırak */
+    margin-left: 20px;
 }
 
 .calling-chart {
@@ -1696,7 +1680,7 @@ body {
 .percentage {
     font-weight: normal;
     color: #333;
-    opacity: 0.5; /* Placeholder gibi soluk gösterir */
+    opacity: 0.5;
 }
 
 .women-color {
@@ -1717,13 +1701,181 @@ body {
     height: 29px;
     padding-left: 10px;
     width: 284px;
-    transition: transform 0.2s ease, color 0.2s ease; /* Yumuşak geçiş için */
-    cursor: pointer; /* El simgesi */
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
 }
 
 .menu-item:hover {
-    transform: scale(1.05); /* Menü öğesini büyüt */
+    transform: scale(1.05);
 }
 
 
 
+.chart-wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  #chart3 {
+    margin-left: 358px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+  
+  #chart3-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #chart3-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  #chart3-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #chart3-title-icon {
+    width: 24px;
+    height: 24px;
+    background: #eee;
+    border-radius: 50%;
+  }
+  
+  #chart3-select-procedures {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f1f3f5;
+    border: none;
+    color: #666;
+  }
+  
+  #chart3-stats-container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  #chart3-chart-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  #chart3-donut-chart {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+      #FFD700 0% 56%,
+      #90EE90 56% 85%,
+      #87CEEB 85% 100%
+    );
+  }
+  
+  #chart3-chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #chart3-total-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #chart3-total-number {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #chart3-stats-list {
+    flex: 1;
+  }
+  
+  #chart3-stat-item1,
+  #chart3-stat-item2,
+  #chart3-stat-item3 {
+    margin-bottom: 20px;
+  }
+  
+  #chart3-stat-header1,
+  #chart3-stat-header2,
+  #chart3-stat-header3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  #chart3-stat-dot-yellow,
+  #chart3-stat-dot-green,
+  #chart3-stat-dot-blue {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  #chart3-stat-dot-yellow { 
+    background: #FFD700; 
+  }
+  
+  #chart3-stat-dot-green { 
+    background: #90EE90; 
+  }
+  
+  #chart3-stat-dot-blue { 
+    background: #87CEEB; 
+  }
+  
+  #chart3-stat-title,
+  #chart3-stat-title2,
+  #chart3-stat-title3 {
+    font-weight: 500;
+  }
+  
+  #chart3-stat-number,
+  #chart3-stat-number2,
+  #chart3-stat-number3 {
+    color: #666;
+  }
+  
+  #chart3-stat-details1,
+  #chart3-stat-details2,
+  #chart3-stat-details3 {
+    color: #666;
+    font-size: 14px;
+    margin-left: 22px;
+  }
+
+  .sidebar {
+    padding-bottom: 20px;
+}
+body {
+    padding-bottom: 120px;
+}
+
+#chart3-chart-container {
+    margin-left: 300px;
+}
