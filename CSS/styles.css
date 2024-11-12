@@ -1462,3 +1462,251 @@ body {
     width: 20px;
     height: 20px;
 }
+
+
+/* Tüm sayfa için yatay kaydırma ekleyin */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: auto; /* Yatay kaydırma çubuğunu etkinleştir */
+    background-color: #EAF0F3;
+    min-width: 1200px; /* Minimum sayfa genişliği */
+}
+
+.graphs-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    min-width: calc(53px * 9 + 30px * 8 + 40px); /* Tüm bar genişlikleri + boşluklar + ekstra 20px */
+}
+
+.nationalities-graph {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.bar-chart {
+    display: flex;
+    gap: 30px; /* Barlar arası boşluk */
+    min-width: calc(53px * 9 + 30px * 8); /* Tüm barların genişlikleri ve aralarındaki boşlukların toplamı */
+}
+
+#chart2 {
+    width: 300px;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.chart-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.donut-chart {
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(#FE0045 0% 71%, #8A2BE2 71% 100%);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.center-text {
+    position: absolute;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.center-text p {
+    font-size: 14px;
+    color: #737373;
+    margin: 0;
+}
+
+.center-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.legend-text {
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+/* Genel ayarlar */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: auto; /* Yatay kaydırma etkin */
+    background-color: #EAF0F3;
+    min-width: 1400px; /* Daha geniş bir görünüm sağlamak için minimum genişlik */
+}
+
+/* Graphs section ayarları */
+.graphs-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    min-width: 1400px; /* Sayfa genişliğini artırmak için minimum genişlik */
+    width: auto; /* İçeriğe göre genişlik ayarı */
+}
+
+/* Nationalities graph ayarları */
+.nationalities-graph {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Mevcut alanı tam kaplaması için */
+    max-width: calc(100% - 340px); /* Sağda `char2` için yer bırak */
+    overflow-x: auto; /* Yatay kaydırmayı etkinleştir */
+}
+
+/* Bar chart ayarları */
+.bar-chart {
+    display: flex;
+    gap: 20px; /* Barlar arası boşluk */
+    justify-content: flex-start;
+    padding-right: 20px; /* Sağda boşluk bırak */
+    min-width: 900px; /* Barların genişliği için minimum genişlik */
+}
+
+/* Bar ayarları */
+.bar {
+    text-align: center;
+}
+
+/* char2 grafik ayarları */
+#char2 {
+    width: 320px; /* Grafik için sabit genişlik */
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 20px; /* `nationalities-graph` ile arasında boşluk bırak */
+}
+
+.calling-chart {
+    width: 300px;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.donut-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#FF6B6B 0% 71%, #7B68EE 71% 100%);
+    margin: 0 auto;
+}
+
+
+.donut-hole {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.total-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.legend-text {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.percentage {
+    font-weight: normal;
+    color: #333;
+    opacity: 0.5; /* Placeholder gibi soluk gösterir */
+}
+
+.women-color {
+    background-color: #FF6B6B;
+}
+
+.men-color {
+    background-color: #7B68EE;
+}
+
+
+
+
