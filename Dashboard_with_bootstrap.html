@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicants Tracking System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --sidebar-width: 240px;
+            --primary-color: #8B0028;
+        }
+        
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-color);
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 1rem;
+        }
+        
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 1rem;
+        }
+        
+        .sidebar-logo {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .sidebar-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            border-radius: 4px;
+        }
+        
+        .sidebar-menu a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .stat-change {
+            font-size: 0.875rem;
+        }
+        
+        .change-positive {
+            color: #28a745;
+        }
+        
+        .change-negative {
+            color: #dc3545;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-top: auto;
+            padding: 1rem;
+        }
+
+        .user-profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 60px;
+            }
+            
+            .main-content {
+                margin-left: 60px;
+            }
+            
+            .sidebar-logo span,
+            .sidebar-menu span,
+            .user-profile span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-star"></i>
+            <span>talenter</span>
+        </div>
+        
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-tasks"></i>
+                    <span>Tasks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Procedures</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Create Procedures</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span>Leads</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Employees</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-book"></i>
+                    <span>Library</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="user-profile mt-auto">
+            <img src="/api/placeholder/40/40" alt="User profile">
+            <div>
+                <span>Emily Taylor</span>
+                <small class="d-block text-light-50">DRH ADMIN</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4>Welcome, Emily</h4>
+            <div class="d-flex align-items-center">
+                <div class="input-group me-3">
+                    <input type="text" class="form-control" placeholder="Search People">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                        ENG
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="stat-card">
+                    <div class="small text-muted">Total Applicants</div>
+                    <div class="stat-value">10,245</div>
+                    <div class="stat-change change-positive">
+                        <i class="fas fa-arrow-up"></i> 14.03%
+                        <small class="text-muted">+125 This Month</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="stat-card">
+                    <div class="small text-muted">Hired</div>
+                    <div class="stat-value">54</div>
+                    <div class="stat-change change-positive">
+                        <i class="fas fa-arrow-up"></i> 25.27%
+                        <small class="text-muted">+5 This Month</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Similar stat cards for Active/Passive Procedure and Happiness Rate -->
+        </div>
+
+        <!-- Charts Row -->
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="chart-container">
+                    <h6>Nationalities (Number of applications)</h6>
+                    <canvas id="nationalitiesChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="chart-container">
+                    <h6>Calling</h6>
+                    <canvas id="callingChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Applicants Chart -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="chart-container">
+                    <h6>Applicants</h6>
+                    <canvas id="applicantsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script>
+        // Nationalities Bar Chart
+        new Chart(document.getElementById('nationalitiesChart'), {
+            type: 'bar',
+            data: {
+                labels: ['France', 'Germany', 'England', 'Spain', 'Italy', 'Sweden', 'Algeria', 'Greece', 'Russian F.'],
+                datasets: [{
+                    data: [35, 24, 27, 19, 15, 11, 9, 5, 4],
+                    backgroundColor: '#ff4081',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Calling Doughnut Chart
+        new Chart(document.getElementById('callingChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Woman Applicants', 'Man Applicants'],
+                datasets: [{
+                    data: [1407, 575],
+                    backgroundColor: ['#ff4081', '#7c4dff']
+                }]
+            },
+            options: {
+                cutout: '70%',
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Applicants Doughnut Chart
+        new Chart(document.getElementById('applicantsChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Applicants', 'Shortlisting', 'Final Listing'],
+                datasets: [{
+                    data: [5737, 2971, 1538],
+                    backgroundColor: ['#ffd54f', '#4caf50', '#29b6f6']
+                }]
+            },
+            options: {
+                cutout: '70%',
+                plugins: {
+                    legend: {
+                        position: 'right'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
